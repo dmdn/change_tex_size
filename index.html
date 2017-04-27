@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS - change text size</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Change text size with JavaScript</h1>
+
+<div class='clearfix btn'>
+    <button id='lessBtn' onclick="changeFontSize(this,'text', -2)">Aa-</button>
+    <button id='resetBtn'>Reset</button>
+    <button id='moreBtn' onclick="changeFontSize(this,'text', 2)">aA+</button>
+</div>
+
+<div id='text' style="font-size:12px;">
+    <p>На странице две кнопки ("Aa-" и "aA+") и блок с текстом (изначально размер текста - 12px). Написать скрипт, чтобы
+        при нажатии на "Aa-" - размер текста уменьшался на 2px (минимальный размер - 8px, если текст минимального
+        размера, то кнопка больше недоступна для кликов), а при нажатии на "aA+" - размер текста увеличивался на 2px
+        (максимальный размер - 20px, , если текст максимального размера, то кнопка больше недоступна для кликов).</p>
+</div>
+
+<script src='js/my_scripts.js'></script>
+
+</body>
+</html>
